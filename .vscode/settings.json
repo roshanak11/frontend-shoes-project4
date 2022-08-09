@@ -1,0 +1,11 @@
+{
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#e062c9",
+    "titleBar.activeBackground": "#e062c9",
+    "titleBar.inactiveBackground": "#e062c9",
+    "statusBar.foreground": "#000",
+    "titleBar.inactiveForeground": "#000",
+    "titleBar.activeForeground": "#000",
+  },
+  "window.title": "FRONTEND SHOES"
+}
