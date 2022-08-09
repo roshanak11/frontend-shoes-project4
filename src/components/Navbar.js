@@ -17,7 +17,7 @@ function Navbar() {
               {/*Line below: Link to="/" creates default page as Home page */}
               <Link to="/" className="navbar-item">
                 {/* Line below: Home tab */}
-                <h2>Homee</h2>
+                <h2>Home</h2>
               </Link>
               <Link to="/shoes" className="navbar-item">
                 {/* Line below: PlantIndex.js. tab */}
