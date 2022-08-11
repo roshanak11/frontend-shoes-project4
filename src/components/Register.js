@@ -10,7 +10,7 @@ export default function Register() {
     username: 'rosh',
     email: 'rosh@rosh.com',
     password: 'rosh123',
-    passwordConfirmation: 'rosh123',
+    // passwordConfirmation: 'rosh123',
   })
 
   // !Errors
@@ -112,7 +112,7 @@ export default function Register() {
               name={'passwordConfirmation'}
               // ! Adding these 2 fields means your component is 'controlled.'
               value={formData.passwordConfirmation}
-              onChange={handleChange}
+              // onChange={handleChange}
             />
             {/* // ! Really nice custom error message */}
             {errors.passwordConfirmation && <small className="has-text-danger">{errors.username}</small>}

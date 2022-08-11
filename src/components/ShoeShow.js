@@ -28,6 +28,7 @@ function ShoeShow() {
   }
 
   console.log(shoe)
+  console.log(getLoggedInUserId())
 
   async function handleReview() {
     try {
