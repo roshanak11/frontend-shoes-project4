@@ -1,5 +1,6 @@
 
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function ShoeIndex() {
   const [shoe, setShoe] = React.useState([])
@@ -16,8 +17,18 @@ function ShoeIndex() {
   return (
     <div className="section">
       <h1 className="title">Shoe Index</h1>
-      <div className="container">
-        {shoe.map(shoe => <h2 key={shoe._id}>{shoe.name}</h2>)}
+      <div className="columns is-multiline"> 
+        {shoe.map(shoe => {
+          return (
+            <>
+              <Link to={`/shoes/${shoe.id}`}>
+                <h2 key={shoe.name}>{shoe.name}</h2>
+                <h3>£{shoe.price}</h3>
+                <img src={shoe.image} alt={shoe.name} />
+              </Link>
+            </>
+          )
+})}
       </div>
     </div>
   )
