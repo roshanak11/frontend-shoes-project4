@@ -26,7 +26,7 @@ export default function Login() {
       const { data } = await axios.post('/api/login', formData)
       localStorage.setItem('token', data.token)
       console.log(data.token)
-      navigate('/coachella')
+      navigate('/shoes')
     } catch (err) {
       console.log(err.response.data)
     }
