@@ -16,7 +16,7 @@ function ShoeIndex() {
 
   return (
     <div className="section">
-      <h1 className="title">Shoe Index</h1>
+      <h1 className="title">Shoes</h1>
       <div className="columns is-multiline"> 
         {shoe.map(shoe => {
           return (
@@ -28,7 +28,7 @@ function ShoeIndex() {
               </Link>
             </>
           )
-})}
+        })}
       </div>
     </div>
   )
