@@ -31,7 +31,7 @@ function CreateShoe() {
 
     const newFormData = {
       ...formData,
-      types: formData.types.map(type => type.value),
+      categories: formData.categories.map(category => category.value),
     }
 
     try {
@@ -50,7 +50,7 @@ function CreateShoe() {
       <div className="container">
         <form onSubmit={handleSubmit}>
           {/* // ! Me Being Extremely Fancy 🤪: */}
-          {['name', 'image', 'description', 'price', 'in_stock', 'categories'].map(field => {
+          {['name', 'image', 'description', 'price', 'in_stock'].map(field => {
             return <div key={field} className="field">
               <label className="label">
                 {field[0].toUpperCase() + field.slice(1)}
@@ -58,7 +58,7 @@ function CreateShoe() {
               <div className="control">
                 <input
                   className="input"
-                  type="text"
+                  category="text"
                   value={formData[field]}
                   onChange={handleChange}
                   name={field}
@@ -67,7 +67,7 @@ function CreateShoe() {
             </div>
           })}
           <label className="label">
-            {'Types'}
+            {'Categories'}
           </label>
           <Select
             defaultValue={[]}
@@ -76,8 +76,8 @@ function CreateShoe() {
             options={shoeCategories}
             className="basic-multi-select"
             classNamePrefix="select"
-            onChange={(types) => setFormData({ ...formData, types })}
-            value={formData.types}
+            onChange={(categories) => setFormData({ ...formData, categories })}
+            value={formData.categories}
           />
           <button className="button mt-5 is-success">Submit</button>
         </form>

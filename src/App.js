@@ -8,6 +8,7 @@ import ShoeShow from './components/ShoeShow'
 import Login from './components/Login'
 import Register from './components/Register'
 import ShoeCategory from './components/SearchShoeCategory'
+import CreateShoe from './components/CreateShoe'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/search" element={<ShoeCategory />} />
+        <Route path="/new-shoe" element={<CreateShoe />} />
       </Routes>
     </Router>
   )
