@@ -44,11 +44,13 @@ export default function Register() {
       console.log(data)
       // ! Navigate to the /login page.
       navigate('/login')
+      alert("Registration successful")
 
     } catch (error) {
       // ! Print out the response form the backend if there's an error
       console.log(error.response.data)
       setErrors(error.response.data.errors)
+      alert("Registration error")
     }
   }
 

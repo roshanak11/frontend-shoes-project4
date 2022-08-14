@@ -31,6 +31,9 @@ function Navbar() {
                 {/* Line below: Register.js tab */}
                 <h2>Register</h2>
               </Link>
+              <Link to='/search' className="button is-secondary">
+              Search
+            </Link>
             </div>
           </div>
         </nav>

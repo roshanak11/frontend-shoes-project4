@@ -3,6 +3,7 @@ import { useNavigate, useParams, Link } from "react-router-dom"
 import { isCreator, getLoggedInUserId } from '../lib/auth'
 import axios from 'axios'
 
+
 function ShoeShow() {
   const [shoe, setShoe] = React.useState(undefined)
   // ! useState for reviews
@@ -18,10 +19,10 @@ function ShoeShow() {
 
   async function handleDelete() {
     try {
-      await axios.delete(`/api/shoes/${shoe.id}`, {
+      await axios.delete(`/api/shoes/${shoe.id}/reviews/${review.id}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
       })
-      navigate('/shoes')
+      navigate(`/shoes/${shoe.id}`)
     } catch (e) {
       console.log(e)
     }
@@ -40,6 +41,7 @@ function ShoeShow() {
         }
       )
       setShoe(data)
+      navigate(`/shoes`)
     } catch (e) {
       console.log(e)
     }
@@ -119,7 +121,7 @@ function ShoeShow() {
                       <p className="control">
                         <textarea
                           className="textarea"
-                          placeholder="Make a review.."
+                          placeholder="Add a review"
                           // ! Set the review's content to be what's in the input textarea.
                           onChange={(event) => setReviewContent(event.target.value)}
                         >

@@ -27,8 +27,10 @@ export default function Login() {
       localStorage.setItem('token', data.token)
       console.log(data.token)
       navigate('/shoes')
+      alert("Login successful")
     } catch (err) {
       console.log(err.response.data)
+      alert("Login error")
     }
   }
 
