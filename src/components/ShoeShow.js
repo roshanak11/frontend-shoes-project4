@@ -14,14 +14,14 @@ function ShoeShow() {
   const navigate = useNavigate()
 
   React.useEffect(() => {
-    fetch(`/${baseUrl}/shoes/${shoeId}`)
+    fetch(`${baseUrl}/shoes/${shoeId}`)
       .then(resp => resp.json())
       .then(data => setShoe(data))
   }, [shoeId])
 
   async function handleDelete() {
     try {
-      await axios.delete(`/${baseUrl}/shoes/${shoe.id}`, {
+      await axios.delete(`${baseUrl}/shoes/${shoe.id}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
       })
       navigate(`/shoes/`)
@@ -36,7 +36,7 @@ function ShoeShow() {
   async function handleReview() {
     try {
       const { data } = await axios.post(
-        `/${baseUrl}/shoes/${shoe.id}/reviews`,
+        `${baseUrl}/shoes/${shoe.id}/reviews`,
         { content: reviewContent },
         {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },

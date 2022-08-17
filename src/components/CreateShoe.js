@@ -36,7 +36,7 @@ function CreateShoe() {
     }
 
     try {
-      const { data } = await axios.post(`/${baseUrl}/shoes`, newFormData, {
+      const { data } = await axios.post(`${baseUrl}/shoes`, newFormData, {
         headers: { Authorization: `Bearer ${token}` },
       })
       console.log(data._id)

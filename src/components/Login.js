@@ -24,7 +24,7 @@ export default function Login() {
     e.preventDefault()
 
     try {
-      const { data } = await axios.post(`/${baseUrl}/login`, formData)
+      const { data } = await axios.post(`${baseUrl}/login`, formData)
       localStorage.setItem('token', data.token)
       console.log(data.token)
       navigate('/shoes')

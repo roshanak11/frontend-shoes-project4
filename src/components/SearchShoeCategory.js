@@ -25,7 +25,7 @@ function ShoeCategory() {
     }
 
     try {
-      const { data } = await axios.get(`/${baseUrl}/shoes`, newFormData, {
+      const { data } = await axios.get(`${baseUrl}/shoes`, newFormData, {
         headers: { Authorization: `Bearer ${token}` },
       })
       console.log(data._id)

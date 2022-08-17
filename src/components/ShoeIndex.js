@@ -8,7 +8,7 @@ function ShoeIndex() {
 
   React.useEffect(() => {
     const getData = async () => {
-      const res = await fetch(`/${baseUrl}/shoes`)
+      const res = await fetch(`${baseUrl}/shoes`)
       const json = await res.json()
       setShoe(json)
     }
