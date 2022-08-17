@@ -32,11 +32,11 @@ function Navbar() {
                 <h2>Register</h2>
               </Link>
               <Link to='/search' className="button is-secondary">
-              Search
-            </Link>
-            <Link to='/new-shoe' className="button is-primary">
-              Create Shoe
-            </Link>
+                Search
+              </Link>
+              <Link to='/new-shoe' className="button is-primary">
+                Create Shoe
+              </Link>
             </div>
           </div>
         </nav>

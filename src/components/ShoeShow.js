@@ -22,7 +22,7 @@ function ShoeShow() {
       await axios.delete(`/api/shoes/${shoe.id}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
       })
-      navigate(`/shoes/${shoe.id}`)
+      navigate(`/shoes/`)
     } catch (e) {
       console.log(e)
     }
@@ -59,12 +59,11 @@ function ShoeShow() {
                 <figure className="image">
                   <img src={shoe.image} alt={shoe.name} />
                 </figure>
-                {/* // ! Only show the button if the shoe was made by the user. */}
-                {isCreator(shoe.user._id) && <button
+                {(shoe.id) && <button
                   className="button is-danger"
                   onClick={handleDelete}
                 >
-                  ☠️ Delete Pokemon
+                  ☠️ Delete Shoe
                 </button>}
               </div>
               <div className="column is-half">
