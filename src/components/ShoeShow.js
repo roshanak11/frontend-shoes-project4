@@ -1,6 +1,7 @@
 import React from "react"
 import { useNavigate, useParams, Link } from "react-router-dom"
-import { isCreator, getLoggedInUserId } from '../lib/auth'
+// import { isCreator, getLoggedInUserId } from '../lib/auth'
+import { getLoggedInUserId } from '../lib/auth'
 import axios from 'axios'
 import { baseUrl } from '../config'
 
