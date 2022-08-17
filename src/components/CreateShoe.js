@@ -4,6 +4,7 @@ import React, { useState } from "react"
 // import shoeCategories from '../data/shoeCategories'
 import axios from 'axios'
 import { useNavigate } from "react-router-dom"
+import { baseUrl } from '../config'
 
 function CreateShoe() {
 
@@ -35,7 +36,7 @@ function CreateShoe() {
     }
 
     try {
-      const { data } = await axios.post('/api/shoes', newFormData, {
+      const { data } = await axios.post`/${baseUrl}/shoes`, newFormData, {
         headers: { Authorization: `Bearer ${token}` },
       })
       console.log(data._id)

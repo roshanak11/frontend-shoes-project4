@@ -4,6 +4,7 @@ import Select from 'react-select'
 import shoeCategories from '../data/shoeCategories'
 import axios from 'axios'
 import { useNavigate } from "react-router-dom"
+import { baseUrl } from '../config'
 
 function ShoeCategory() {
 
@@ -24,7 +25,7 @@ function ShoeCategory() {
     }
 
     try {
-      const { data } = await axios.get('/api/shoes', newFormData, {
+      const { data } = await axios.get(`/${baseUrl}/shoes`, newFormData, {
         headers: { Authorization: `Bearer ${token}` },
       })
       console.log(data._id)

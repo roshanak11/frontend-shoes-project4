@@ -1,13 +1,14 @@
 
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { baseUrl } from '../config'
 
 function ShoeIndex() {
   const [shoe, setShoe] = React.useState([])
 
   React.useEffect(() => {
     const getData = async () => {
-      const res = await fetch('/api/shoes')
+      const res = await fetch(`/${baseUrl}/shoes`)
       const json = await res.json()
       setShoe(json)
     }
