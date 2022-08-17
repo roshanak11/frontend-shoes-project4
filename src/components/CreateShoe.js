@@ -1,7 +1,7 @@
 import React, { useState } from "react"
-// ! Importing all shoe categories, and react-select.
-import Select from 'react-select'
-import shoeCategories from '../data/shoeCategories'
+// // ! Importing all shoe categories, and react-select.
+// import Select from 'react-select'
+// import shoeCategories from '../data/shoeCategories'
 import axios from 'axios'
 import { useNavigate } from "react-router-dom"
 
@@ -66,7 +66,7 @@ function CreateShoe() {
               </div>
             </div>
           })}
-          <label className="label">
+          {/* <label className="label">
             {'Categories'}
           </label>
           <Select
@@ -78,7 +78,7 @@ function CreateShoe() {
             classNamePrefix="select"
             onChange={(categories) => setFormData({ ...formData, categories })}
             value={formData.categories}
-          />
+          /> */}
           <button className="button mt-5 is-success">Submit</button>
         </form>
       </div>

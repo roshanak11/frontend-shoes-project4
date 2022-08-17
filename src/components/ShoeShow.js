@@ -19,7 +19,7 @@ function ShoeShow() {
 
   async function handleDelete() {
     try {
-      await axios.delete(`/api/shoes/${shoe.id}/reviews/${review.id}`, {
+      await axios.delete(`/api/shoes/${shoe.id}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
       })
       navigate(`/shoes/${shoe.id}`)
@@ -59,6 +59,13 @@ function ShoeShow() {
                 <figure className="image">
                   <img src={shoe.image} alt={shoe.name} />
                 </figure>
+                {/* // ! Only show the button if the shoe was made by the user. */}
+                {isCreator(shoe.user._id) && <button
+                  className="button is-danger"
+                  onClick={handleDelete}
+                >
+                  ☠️ Delete Pokemon
+                </button>}
               </div>
               <div className="column is-half">
                 <h4 className="title is-4">
@@ -102,12 +109,12 @@ function ShoeShow() {
                         </p>
                         <p>{review.content}</p>
                       </div>
-                      {isCreator(review.user.id) && <button
+                      {/* {isCreator(review.user.id) && <button
                         className="button is-danger"
                         onClick={handleDelete}
                       >
                         ☠️ Delete Review
-                      </button>}
+                      </button>} */}
                     </div>
                   </article>
                 })}

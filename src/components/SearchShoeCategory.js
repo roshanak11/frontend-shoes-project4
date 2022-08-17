@@ -24,7 +24,7 @@ function ShoeCategory() {
     }
 
     try {
-      const { data } = await axios.post('/api/shoes', newFormData, {
+      const { data } = await axios.get('/api/shoes', newFormData, {
         headers: { Authorization: `Bearer ${token}` },
       })
       console.log(data._id)
