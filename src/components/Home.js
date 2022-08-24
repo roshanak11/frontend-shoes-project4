@@ -4,8 +4,11 @@ function Home() {
       <div className="hero-body">
         <div className="container">
           <p className="title is-1 has-text-centered has-text-black">
-            Home
+            Shoe Drip
           </p>
+          <div className="head-image">
+            <img src={('https://res.cloudinary.com/dgicm5dgb/image/upload/v1661384491/project-4-shoes/homepage2_onvdcq.webp')} alt="Shoe Drip" />
+          </div>
         </div>
       </div>
     </section>
