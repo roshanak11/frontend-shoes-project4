@@ -18,14 +18,21 @@ function ShoeIndex() {
   return (
     <div className="section">
       <h1 className="title">Shoes</h1>
-      <div className="columns is-multiline"> 
+      <div className="columns is-multiline">
         {shoe.map(shoe => {
           return (
             <>
               <Link to={`/shoes/${shoe.id}`}>
-                <h2 key={shoe.name}>{shoe.name}</h2>
-                <h3>£{shoe.price}</h3>
-                <img src={shoe.image} alt={shoe.name} />
+                <div className="card">
+                  <div className="card-content">
+                    <h2 key={shoe.name}>{shoe.name} | £{shoe.price}</h2>
+                  </div>
+                </div>
+                <div className="card-image">
+                  <figure className="image is-1by1">
+                    <img src={shoe.image} alt={shoe.name} />
+                  </figure>
+                </div>
               </Link>
             </>
           )
