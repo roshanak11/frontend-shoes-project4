@@ -71,28 +71,22 @@ function ShoeShow() {
               <div className="column is-half">
                 <h4 className="title is-4">
                   <span role="img" aria-label="plate">
-                    ⭐️
                   </span>{" "}
-                  In_Stock
+                  In Stock
                 </h4>
                 <p>{shoe.in_stock}</p>
                 <hr />
                 <h4 className="title is-4">
                   <span role="img" aria-label="globe">
-                    ⚖️
                   </span>{" "}
-                  Price
+                  {"£" + shoe.price}
                 </h4>
-                <hr />
-                <p>{shoe.price + "kg"}</p>
                 <hr />
                 <h4 className="title is-4">
                   <span role="img" aria-label="wave">
-                    🏋️‍♀️
                   </span>{" "}
                   Description
                 </h4>
-                <hr />
                 <p>{shoe.description}</p>
                 {
                   // ! Show our reviews (lots of bulma)
