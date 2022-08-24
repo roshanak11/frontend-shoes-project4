@@ -7,7 +7,7 @@ function Home() {
             Shoe Drip
           </p>
           <div className="head-image">
-            <img src={('https://res.cloudinary.com/dgicm5dgb/image/upload/v1661384491/project-4-shoes/homepage2_onvdcq.webp')} alt="Shoe Drip" />
+            <img src={('https://res.cloudinary.com/dgicm5dgb/image/upload/v1661385128/project-4-shoes/homepage2_onvdcq.webp')} alt="Shoe Drip" />
           </div>
         </div>
       </div>
