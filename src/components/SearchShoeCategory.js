@@ -55,6 +55,10 @@ function ShoeCategory() {
           />
           <button className="button mt-5 is-success">Submit</button>
         </form>
+
+        <p><br/ >
+        **This page is a stretch goal that has not been completed due to time constraints.
+        </p>
       </div>
     </section>
   )
