@@ -18,7 +18,7 @@ function ShoeIndex() {
   return (
     <div className="section">
       <h1 className="title">Shoes</h1>
-      <div className="columns is-multiline">
+      <div className="columns is-multiline is-mobile">
         {shoe.map(shoe => {
           return (
             <>
