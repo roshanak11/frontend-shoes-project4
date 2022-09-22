@@ -11,31 +11,31 @@ function Navbar() {
       {/* Lines below: Navbar is created in Header and has Home, Plants, Show Plant, Login, and Register tabs that link to the Home.js, PlantIndex.js, PlantShow.js, Login.js, and Register.js components. */}
       <header>
         {/* Lines below: "navbar is-dark", "container", "navbar-brand", "navbar-item" imports class names from bulma */}
-        <nav className="navbar is-light">
+        <nav>
           <div className="container">
-            <div className="navbar-start">
+            <div className="navbar-brand">
               {/*Line below: Link to="/" creates default page as Home page */}
               <Link to="/" className="navbar-item">
                 {/* Line below: Home tab */}
-                <h2>Home</h2>
+                <h2 className="navbar">Home</h2>
               </Link>
               <Link to="/shoes" className="navbar-item">
                 {/* Line below: PlantIndex.js. tab */}
-                <h2>Shoes</h2>
+                <h2 className="navbar">Shoes</h2>
               </Link>
               <Link to="/login" className="navbar-item">
                 {/* Line below: Login.js tab */}
-                <h2>Login</h2>
+                <h2 className="navbar">Login</h2>
               </Link>
               <Link to="/register" className="navbar-item">
                 {/* Line below: Register.js tab */}
-                <h2>Register</h2>
+                <h2 className="navbar">Register</h2>
               </Link>
-              <Link to='/search' className="button is-secondary">
+              {/* <Link to='/search' className="button is-secondary">
                 Search
-              </Link>
-              <Link to='/new-shoe' className="button is-primary">
-                Create Shoe
+              </Link> */}
+              <Link to='/new-shoe' className="navbar-item">
+                <h2 className="navbar">Create Shoe</h2>
               </Link>
             </div>
           </div>

@@ -13,8 +13,7 @@
   width: 100vw;
 }
 
-#title,
-#subtitle {
+#title {
   font-size: 80px;
   text-shadow: 5px 5px 5px #363636;
   color: white;
@@ -23,4 +22,30 @@
   align-items: center;
   font-family: 'Fredoka', sans-serif;
   font-family: 'Montserrat', sans-serif;
+}
+
+// Navbar
+nav {
+  background-color:	#fffffff;
+}
+
+.navbar {
+  color: #6495ED;
+  font-size: large;
+  font-weight: 800;
+  font-family: 'Fredoka', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 20px;
+  font-size: 25pt;
+}
+
+.navbar:hover {
+  background-color: #87CEFA;
+  color: #ffffff;
+}
+
+.container {
+  flex: display;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
