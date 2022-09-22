@@ -6,7 +6,7 @@ import { baseUrl } from '../config'
 export default function Register() {
   // ! Using react router to navigate
   const navigate = useNavigate()
-  // ! Put our form fields in state.
+  // ! Put form fields in state.
   const [formData, setFormData] = React.useState({
     username: 'rosh',
     email: 'rosh@rosh.com',
@@ -21,7 +21,7 @@ export default function Register() {
   })
 
   function handleChange(e) {
-    // ! name: The field you've typed in, e.g. username/email/password.
+    // ! name: The field I've typed in, e.g. username/email/password.
     // ! value: the text that's in that field.
     // console.log(e)
     const { name, value } = e.target // ! This will get the name and value out of the event object. The name is the 'username' (example) and value is whatever's in the input.
@@ -96,7 +96,7 @@ export default function Register() {
               className="input"
               type="password"
               name={'password'}
-              // ! Adding these 2 fields means your component is 'controlled.'
+              // ! Adding these 2 fields means my component is 'controlled.'
               value={formData.password}
               onChange={handleChange}
             />

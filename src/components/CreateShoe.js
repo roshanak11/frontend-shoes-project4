@@ -50,7 +50,6 @@ function CreateShoe() {
     <section className="section">
       <div className="container">
         <form onSubmit={handleSubmit}>
-          {/* // ! Me Being Extremely Fancy 🤪: */}
           {['name', 'image', 'description', 'price', 'in_stock'].map(field => {
             return <div key={field} className="field">
               <label className="label">

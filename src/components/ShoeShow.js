@@ -89,7 +89,7 @@ function ShoeShow() {
                 </h4>
                 <p>{shoe.description}</p>
                 {
-                  // ! Show our reviews (lots of bulma)
+                  // ! Show reviews (lots of bulma)
                 }
                 <br />
                 {shoe.reviews && shoe.reviews.map(review => {
