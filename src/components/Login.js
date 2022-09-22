@@ -36,6 +36,7 @@ export default function Login() {
   }
 
   return <div className="section">
+    <h1 className="title has-text-centered">Login</h1>
     <div className="container">
       <form onSubmit={handleSubmit}>
         <div className="field">

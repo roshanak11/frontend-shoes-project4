@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useState }  from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { baseUrl } from '../config'
 
@@ -57,6 +57,7 @@ export default function Register() {
 
 
   return <div className="section">
+    <h1 className="title has-text-centered">Shoes</h1>
     <div className="container">
       <form onSubmit={handleSubmit}>
         <div className="field">

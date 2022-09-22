@@ -20,8 +20,8 @@ function CreateShoe() {
   })
 
   function handleChange(event) {
-    setFormData({ 
-      ...formData, 
+    setFormData({
+      ...formData,
       [event.target.name]: event.target.value,
     })
   }
@@ -48,6 +48,7 @@ function CreateShoe() {
 
   return (
     <section className="section">
+      <h1 className="title has-text-centered">Create New Shoe</h1>
       <div className="container">
         <form onSubmit={handleSubmit}>
           {['name', 'image', 'description', 'price', 'in_stock'].map(field => {
