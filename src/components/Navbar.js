@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import React from "react"
 
 
-// ! The one difference in this navigation, are the Link components.
+// ! Link components added to navigation.
 function Navbar() {
 
   return (
@@ -31,11 +31,11 @@ function Navbar() {
                 {/* Line below: Register.js tab */}
                 <h2 className="navbar">Register</h2>
               </Link>
-              {/* <Link to='/search' className="button is-secondary">
-                Search
-              </Link> */}
               <Link to='/new-shoe' className="navbar-item">
                 <h2 className="navbar">Create Shoe</h2>
+              </Link>
+              <Link to='/search' className="navbar-item">
+                <h2 className="navbar">Search</h2>
               </Link>
             </div>
           </div>
