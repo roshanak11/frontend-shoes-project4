@@ -37,7 +37,7 @@ I built a full-stack E-commerce app selling Shoes using JavaScript, Bulma, React
 - MongoDB to run our database in our terminal 
 
 **Installation Instructions for Dependencies**
-Backend Run:
+Install Dependencies on Backend:
 - `pipenv install Flask`
 - `pipenv install Flask-SQLAlchemy`
 - `pipenv install psycopg2-binary`
