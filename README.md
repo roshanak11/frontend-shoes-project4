@@ -165,10 +165,10 @@ On the backend, I set up my terminal to show me whenever users would get, post, 
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971160/project%204%20readme/Picture25_eblgmq.png)
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971160/project%204%20readme/Picture26_hn5n2u.jpg)
 
-**Testing CRUD functionality on Insomnia:**
+**Testing CRUD functionality on Insomnia**
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971214/project%204%20readme/Picture27_ifcg44.jpg)
 
-**Embedded Project:**
+**Embedded Project**
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971297/project%204%20readme/Picture28_q41xu4.jpg)
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971297/project%204%20readme/Picture29_hknaae.jpg)
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971298/project%204%20readme/Picture30_ikj7ff.jpg)
@@ -177,7 +177,7 @@ On the backend, I set up my terminal to show me whenever users would get, post, 
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971329/project%204%20readme/Picture33_hsh2nt.jpg)
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971330/project%204%20readme/Picture34_tmqxps.jpg)
 
-**Project Code:**
+**Project Code**
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971393/project%204%20readme/Picture35_zm1pmq.jpg)
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971393/project%204%20readme/Picture36_aau7rk.jpg)
 
