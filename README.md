@@ -160,6 +160,10 @@ On the backend, I set up my terminal to show me whenever users would get, post, 
 
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982398/project%204%20readme%20REDO%20CLEAR/082CF8AE-E0A7-461A-BA7D-0583817D93E9_lbzuuw.jpg)
 
+
+The app also uses mobile-first design through the use of Bulma CSS:
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1664028007/mobile-first-design%20readmes/89448EEE-95B4-43C3-8CD2-90E41C87D9BE_krfpc1.jpg)
+
 ## Screenshots
 **Project Pitch Deck**
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982489/project%204%20readme%20REDO%20CLEAR/excalidraw2_qewjiw.png)
