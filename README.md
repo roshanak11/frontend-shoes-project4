@@ -68,62 +68,62 @@ I created an e-commerce site because I wanted to create something with a real wo
 
 In the backend, I ensured that registered users received a token during login that they could use to create reviews, create new shoes, and delete shoes. Without registering a valid account, users would not be able to login and receive a token. Without the token received during login, no one would be able to create reviews, create new shoes, or delete shoes, which would prevent spam bots from interfering with the app. I tested this on the backend when posting reviews and deleting shoes using the bearer token received during login with a registered account on Insomnia. Therefore, the token is only given to users who successfully register their accounts and login with the same registered user information:
 
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663969925/project%204%20readme/Picture1_f3sf1f.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663981447/project%204%20readme%20REDO%20CLEAR/A7FA2B4A-7DB7-439C-9498-177BB45DCD7B_ak5lwg.jpg)
 
 On the frontend, users do not have access to deleting shoes or the option to post reviews and new shoes if they are not logged in properly with a registered account. Below is an example of what a logged in user sees. They are able to add reviews to shoes:
 
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663970001/project%204%20readme/Picture2_xgmsnu.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663981487/project%204%20readme%20REDO%20CLEAR/0F77E920-07FD-4EC4-901B-E3A2716EAC30_wnfryl.jpg)
 
 However, a user who is not logged in does not have this option to add reviews:
 
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663970085/project%204%20readme/Picture3_ilmuvi.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663981517/project%204%20readme%20REDO%20CLEAR/DCC2A807-D6AB-4C68-A130-4A190DE7E65F_rctq0o.jpg)
 
 Furthermore, I ensured to add validation errors in the Controllers folder in the backend to ensure that users must fill all fields appropriately for registration and login. Missing fields and invalid fields would prevent successful registration and login:
 
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663970123/project%204%20readme/Picture4_ttgpv9.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663981580/project%204%20readme%20REDO%20CLEAR/7917A5FF-754A-4E23-A5B5-5DF235F5AC49_y1an6e.jpg)
 
 In addition, in order to create a shoe, users also need to fill out valid fields so bots and spammers do not spam the Shoes page with improper data.
 
 I added validation checks and error messages for improper validation when testing the endpoints on Insomnia. For instance, the following code allowed me to see an error message on Insomnia if I attempted to view a shoe that didn’t exist:
 
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663970164/project%204%20readme/Picture5_or5ksy.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663981639/project%204%20readme%20REDO%20CLEAR/Image_9-18-22_at_11.14_PM_xrcyep.jpg)
 
 I typed in an incorrect shoe ID in the URL of a shoe that didn’t exist, and saw the error message I created in my code when trying to get my shoe:
 
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663970201/project%204%20readme/Picture6_awwqrj.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663981695/project%204%20readme%20REDO%20CLEAR/97D299A3-ABAD-4627-89DB-957AB5A2DE7C_sghobc.jpg)
 
 Likewise, users also see an error if they try to create a shoe with missing or invalid fields:
 
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663970235/project%204%20readme/Picture7_oves3h.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663981744/project%204%20readme%20REDO%20CLEAR/AFE22FAB-80CF-41F7-B8AD-AD791AFE2758_mpadmx.jpg)
 
 I also added authorization errors on the secure route file of the backend middleware when trying to post reviews, delete shoes, or update reviews without using the correct bearer token from login:
 
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663970281/project%204%20readme/Picture8_uonmwv.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663981810/project%204%20readme%20REDO%20CLEAR/Image_9-18-22_at_11.26_PM_q1osqj.jpg)
 
 For example, the following authorization error is seen when trying to update a review without the correct bearer token:
 
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663970313/project%204%20readme/Picture9_wzgcfb.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663981838/project%204%20readme%20REDO%20CLEAR/Image_9-18-22_at_11.23_PM_bj8ogk.jpg)
 
 I also added a seed file to add messages to my terminal during seeding to ensure there were no errors when seeding my database. I used the following code, and the messages ensuring successful seeding can be viewed in the terminal: 
 
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663970357/project%204%20readme/Picture10_dialhv.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663981879/project%204%20readme%20REDO%20CLEAR/Image_9-18-22_at_11.34_PM_wl7epr.jpg)
 
 This is the terminal during successful seeding: 
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663970395/project%204%20readme/Picture11_xo3x0e.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663981905/project%204%20readme%20REDO%20CLEAR/Image_9-18-22_at_11.38_PM_b6qjgm.jpg)
 
 I created my very first Flask SQLAlchemy model with my base model on the backend. I found the base model quite interesting because it allowed me to create common fields that all of my other models could use.
 
 I created an administrative user in the user data model on the backend. I also created an association object in the shoe category model on the backend so I could create a many to many relationship between my shoes and the following categories: flat, heel, sandal, and boot. I ensured in my shoe data that each shoe fell into either the flat or heel category and fell into the sandal or boot category. Each shoe had multiple categories, and each category belonged to multiple shoes:
 
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663970430/project%204%20readme/Picture12_lkuiup.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663981941/project%204%20readme%20REDO%20CLEAR/6585EF0A-0690-4F17-A852-142831E25C62_egjpej.jpg)
 
 The multiple categories per shoe can be seen on TablePlus as each shoe ID has more than one category associated with it:
 
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663970483/project%204%20readme/Picture13_u3srqj.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663981995/project%204%20readme%20REDO%20CLEAR/81F3AA01-37BE-4AB9-95F3-8C9CEF0B6447_c5dk18.jpg)
 
 Meanwhile, the reviews had a one to one relationship with shoes as each shoe could only be posted on one individual shoe at a time.
 
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663970590/project%204%20readme/Picture14_ncdjhg.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982031/project%204%20readme%20REDO%20CLEAR/Image_9-6-22_at_7.33_PM_1_i2u6op.jpg)
 
 I was fascinated by learning how to create specific columns for my shoe table in my database using the shoe model on the backend. I determined what type of data would be stored under the columns (i.e. text, boolean, or integer) and whether this data was unique or nullable:
 
@@ -131,34 +131,34 @@ I was fascinated by learning how to create specific columns for my shoe table in
 
 I saw the following columns in TablePlus when running my database:
 
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663970797/project%204%20readme/Picture16_culcqw.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982111/project%204%20readme%20REDO%20CLEAR/9E59C501-B4FA-476D-ADAC-E51E92807280_sadp0e.jpg)
 
 Furthermore, I saw updates on TablePlus whenever users deleted shoes, posted reviews, or created new shoes. This ensured my frontend and database were connected and working properly.
 
 Furthermore, in the shoe serializer on the backend, I nested reviews inside the shoe so that each reviews would be attached to each shoe:
 
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663970867/project%204%20readme/Picture17_d9ydcf.jpg)
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663970879/project%204%20readme/Picture18_sjs8bo.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982216/project%204%20readme%20REDO%20CLEAR/2E34E281-30EE-4BCE-B285-64F3E9473FCE_hcmwb9.jpg)
 
 In the user model file on the backend, I also hashed and encrypted the password to create an added layer of security so that the password would not be stored within the database:
 
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663970910/project%204%20readme/Picture19_x6jscb.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982242/project%204%20readme%20REDO%20CLEAR/Image_9-19-22_at_12.03_AM_hu3zol.jpg)
 
 It was interesting to create my own database data for the API on the backend. I used Pexels to search for images for my API data, and I learned about using Cloudinary to upload images into URLs so that my app would not be too large of a file with too many images in the images folders. I then linked the backend to the frontend to fetch the shoe data from the API and post it on the shoe page to be read.
 
 Users could click on individual shoes to learn more about each shoe, as well as delete shoes. Logged in users could also add reviews and create new shoes which would then appear on the shoes page:
 
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663970969/project%204%20readme/Picture20_gxh6xx.jpg)
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663970980/project%204%20readme/Picture21_tdvn8p.jpg)
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663970983/project%204%20readme/Picture22_umgqbz.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982306/project%204%20readme%20REDO%20CLEAR/AEBF9402-051D-4FD3-844C-3F5B4128DB64_xvs3gl.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982317/project%204%20readme%20REDO%20CLEAR/A9FA335C-F398-40CC-A98B-7178B9E5BEE6_x4sqwl.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982328/project%204%20readme%20REDO%20CLEAR/4BA51F45-6AD2-45D5-9ED4-562D1BB36F5B_urnvpt.jpg)
 
 The new reviews that logged in users added would also update on the TablePlus database:
 
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971029/project%204%20readme/Picture23_srpt85.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982340/project%204%20readme%20REDO%20CLEAR/AFE9F603-0386-4A51-B23A-A73F13C49FC4_ynxstw.jpg)
 
 On the backend, I set up my terminal to show me whenever users would get, post, or delete a resource:
 
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971060/project%204%20readme/Picture24_gbootg.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982398/project%204%20readme%20REDO%20CLEAR/082CF8AE-E0A7-461A-BA7D-0583817D93E9_lbzuuw.jpg)
 
 ## Screenshots
 **Project Pitch Deck**
@@ -173,7 +173,7 @@ On the backend, I set up my terminal to show me whenever users would get, post, 
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971297/project%204%20readme/Picture29_hknaae.jpg)
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971298/project%204%20readme/Picture30_ikj7ff.jpg)
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971329/project%204%20readme/Picture31_s1ogcw.jpg)
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971329/project%204%20readme/Picture32_fnm1df.jpg
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971329/project%204%20readme/Picture32_fnm1df.jpg)
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971329/project%204%20readme/Picture33_hsh2nt.jpg)
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971330/project%204%20readme/Picture34_tmqxps.jpg)
 
