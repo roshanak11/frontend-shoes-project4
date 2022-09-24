@@ -13,7 +13,7 @@ function Navbar() {
         {/* Lines below: "navbar is-dark", "container", "navbar-brand", "navbar-item" imports class names from bulma */}
         <nav>
           <div className="container">
-            <div className="navbar-brand">
+            <div className="navbar-start">
               {/*Line below: Link to="/" creates default page as Home page */}
               <Link to="/" className="navbar-item">
                 {/* Line below: Home tab */}
