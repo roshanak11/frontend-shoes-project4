@@ -137,7 +137,7 @@ Furthermore, I saw updates on TablePlus whenever users deleted shoes, posted rev
 
 Furthermore, in the shoe serializer on the backend, I nested reviews inside the shoe so that each reviews would be attached to each shoe:
 
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663970867/project%204%20readme/Picture17_d9ydcf.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663983171/project%204%20readme%20REDO%20CLEAR/CB98CEEA-BBA2-44E0-A977-1A4C9CECD27C_zg8n3c.jpg)
 # ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982216/project%204%20readme%20REDO%20CLEAR/2E34E281-30EE-4BCE-B285-64F3E9473FCE_hcmwb9.jpg)
 
 In the user model file on the backend, I also hashed and encrypted the password to create an added layer of security so that the password would not be stored within the database:
