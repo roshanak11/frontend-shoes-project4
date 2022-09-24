@@ -162,24 +162,26 @@ On the backend, I set up my terminal to show me whenever users would get, post, 
 
 ## Screenshots
 **Project Pitch Deck**
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971160/project%204%20readme/Picture25_eblgmq.png)
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971160/project%204%20readme/Picture26_hn5n2u.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982489/project%204%20readme%20REDO%20CLEAR/excalidraw2_qewjiw.png)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982540/project%204%20readme%20REDO%20CLEAR/0D7CC2A6-B9DF-4EC3-968A-FB500A6CD3C9_jexsew.jpg)
 
 **Testing CRUD functionality on Insomnia**
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971214/project%204%20readme/Picture27_ifcg44.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982216/project%204%20readme%20REDO%20CLEAR/2E34E281-30EE-4BCE-B285-64F3E9473FCE_hcmwb9.jpg)
 
 **Embedded Project**
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971297/project%204%20readme/Picture28_q41xu4.jpg)
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971297/project%204%20readme/Picture29_hknaae.jpg)
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971298/project%204%20readme/Picture30_ikj7ff.jpg)
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971329/project%204%20readme/Picture31_s1ogcw.jpg)
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971329/project%204%20readme/Picture32_fnm1df.jpg)
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971329/project%204%20readme/Picture33_hsh2nt.jpg)
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971330/project%204%20readme/Picture34_tmqxps.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982634/project%204%20readme%20REDO%20CLEAR/91760250-C569-4054-A99B-D8936B5AD98A_ua5e4z.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982646/project%204%20readme%20REDO%20CLEAR/6A0A0FA0-5524-4B7F-BC2B-ABFBAB2552B5_q4s1dv.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982659/project%204%20readme%20REDO%20CLEAR/D56E2497-70E1-4521-B589-3ADB37A4EB84_kjloy5.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982673/project%204%20readme%20REDO%20CLEAR/AEBF9402-051D-4FD3-844C-3F5B4128DB64_umn2cw.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982689/project%204%20readme%20REDO%20CLEAR/4BA51F45-6AD2-45D5-9ED4-562D1BB36F5B_sstkid.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982698/project%204%20readme%20REDO%20CLEAR/A9FA335C-F398-40CC-A98B-7178B9E5BEE6_qqkvd2.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982701/project%204%20readme%20REDO%20CLEAR/1752340E-CF88-41E2-BAD9-E847B0C270CC_znibd4.jpg)
 
 **Project Code**
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971393/project%204%20readme/Picture35_zm1pmq.jpg)
-# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663971393/project%204%20readme/Picture36_aau7rk.jpg)
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982734/project%204%20readme%20REDO%20CLEAR/D61AD019-4A52-41CA-8D46-58BD221C7E29_miyfj8.jpg)
+
+**Database on TablePlus**
+# ![](https://res.cloudinary.com/dgicm5dgb/image/upload/v1663982761/project%204%20readme%20REDO%20CLEAR/81F3AA01-37BE-4AB9-95F3-8C9CEF0B6447_db9yne.jpg)
 
 
  ## Bugs, Blockers, Wins
