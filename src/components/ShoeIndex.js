@@ -3,6 +3,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { baseUrl } from '../config'
 
+// Fetch all the shoes with the API I built
 function ShoeIndex() {
   const [shoe, setShoe] = React.useState([])
 
@@ -15,6 +16,7 @@ function ShoeIndex() {
     getData()
   }, [])
 
+  // Map all the shoes onto the page
   return (
     <div className="section">
       <h1 className="title has-text-centered">Shoes</h1>
