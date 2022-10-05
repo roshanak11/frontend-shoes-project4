@@ -105,6 +105,7 @@ export default function Register() {
             {errors.password && <small className="has-text-danger">{errors.username}</small>}
           </div>
         </div>
+        {/* // ! When the user clicks Register, it will POST to my /api/register on the backend. Then I'll get a response from the API that responds with the new user. */}
         <button className="button">Submit</button>
       </form>
     </div>
